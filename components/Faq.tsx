@@ -29,43 +29,6 @@ export default function Faq() {
           <ContentItem>{t('2.answer-2')}</ContentItem>
           <ContentItem>{t('2.answer-3')}</ContentItem>
         </div>
-        <div>
-          <TitleItem>{t('3.question')}</TitleItem>
-          <ContentItem>{t('3.answer-1')}</ContentItem>
-          <ContentItem>{t('3.answer-2')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('4.question')}</TitleItem>
-          <ContentItem>{t('4.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('5.question')}</TitleItem>
-          <ContentItem>{t('5.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('6.question')}</TitleItem>
-          <ContentItem>{t('6.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('7.question')}</TitleItem>
-          <ContentItem>{t('7.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('8.question')}</TitleItem>
-          <ContentItem>{t('8.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('9.question')}</TitleItem>
-          <ContentItem>{t('9.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('10.question')}</TitleItem>
-          <ContentItem>{t('10.answer')}</ContentItem>
-        </div>
-        <div>
-          <TitleItem>{t('11.question')}</TitleItem>
-          <ContentItem>{t('11.answer')}</ContentItem>
-        </div>
       </div>
     </div>
   );

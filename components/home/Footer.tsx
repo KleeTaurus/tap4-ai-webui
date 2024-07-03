@@ -31,6 +31,7 @@ function InfoLink({
 export default function Footer() {
   const t = useTranslations('Footer');
 
+  /*
   const SupportLinks = [
     {
       title: t('tap4'),
@@ -41,6 +42,7 @@ export default function Footer() {
       href: 'https://tattooai.design',
     },
   ];
+  */
 
   const INFO_LIST = [
     {
@@ -61,21 +63,6 @@ export default function Footer() {
           <h2 className='text-xs'>{t('subTitle')}</h2>
         </div>
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
-          <div className='flex w-full flex-col gap-2'>
-            <h2 className='font-bold'>{t('support')}</h2>
-            {SupportLinks.map((item) => (
-              <a
-                href={item.href}
-                key={item.href}
-                target='_blank'
-                rel='noreferrer'
-                className='text-xs hover:opacity-70 lg:text-sm'
-                title={item.title}
-              >
-                {item.title}
-              </a>
-            ))}
-          </div>
           <div className='grid grid-cols-2 gap-x-10 gap-y-5 lg:grid-cols-1 lg:gap-3'>
             {INFO_LIST.map((item) => (
               <InfoLink key={item.href} href={item.href} title={item.title} />
