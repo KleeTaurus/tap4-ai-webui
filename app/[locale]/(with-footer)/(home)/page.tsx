@@ -37,7 +37,7 @@ export default async function Page() {
   const supabase = createClient();
   const t = await getTranslations('Home');
   const [{ data: categoryList }, { data: navigationList }] = await Promise.all([
-    supabase.from('navigation_category').select(),
+    supabase.from('navigation_category').select().eq('del_flag', 0),
     supabase.from('web_navigation').select().order('collection_time', { ascending: false }).limit(12),
   ]);
 
@@ -55,7 +55,7 @@ export default async function Page() {
           <TagList
             data={categoryList!.map((item) => ({
               id: String(item.id),
-              name: item.name,
+              name: item.title,
               href: `/category/${item.name}`,
             }))}
           />
