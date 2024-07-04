@@ -19,8 +19,7 @@ export const InfoPageSize = 12;
 
 export const FORM_PLACEHOLDER = 'https://aitools.dedao.cn/';
 
-export const WEBSITE_EXAMPLE =
-  '<a href="https://tap4.ai/" title="Tap4 AI Tools Directory">Tap4 AI Tools Diresctory</a>';
+export const WEBSITE_EXAMPLE = '<a href="https://aitools.dedao.cn/" title="得到AI学习圈工具箱">得到AI学习圈工具箱</a>';
 
 export const STARTUP_LIST = [
   {

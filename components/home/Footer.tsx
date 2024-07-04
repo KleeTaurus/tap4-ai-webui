@@ -34,8 +34,8 @@ export default function Footer() {
   /*
   const SupportLinks = [
     {
-      title: t('tap4'),
-      href: 'https://www.tap4.ai',
+      title: t('dedao ai tools'),
+      href: 'https://aitools.dedao.cn',
     },
     {
       title: t('tattoo'),

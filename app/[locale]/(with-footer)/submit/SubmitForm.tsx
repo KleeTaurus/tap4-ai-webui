@@ -9,7 +9,8 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
 
-import { FORM_PLACEHOLDER /* WEBSITE_EXAMPLE */ } from '@/lib/constants';
+// import { FORM_PLACEHOLDER /* WEBSITE_EXAMPLE */ } from '@/lib/constants';
+import { FORM_PLACEHOLDER } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
