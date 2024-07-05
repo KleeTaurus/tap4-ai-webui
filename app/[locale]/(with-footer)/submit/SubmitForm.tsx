@@ -75,7 +75,7 @@ export default function SubmitForm({ className }: { className?: string }) {
                 <FormLabel>{t('website')}</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder='AI 学习圈工具导航网站'
+                    placeholder='AI学习圈工具导航网站'
                     className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
                     {...field}
                   />

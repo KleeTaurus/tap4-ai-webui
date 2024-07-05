@@ -21,7 +21,8 @@ export default function Faq() {
       <div className='grid grid-cols-1 gap-5 px-3 lg:grid-cols-2 lg:gap-16 lg:px-0'>
         <div>
           <TitleItem>{t('1.question')}</TitleItem>
-          <ContentItem>{t('1.answer')}</ContentItem>
+          <ContentItem>{t('1.answer-1')}</ContentItem>
+          <ContentItem>{t('1.answer-2')}</ContentItem>
         </div>
         <div>
           <TitleItem>{t('2.question')}</TitleItem>
