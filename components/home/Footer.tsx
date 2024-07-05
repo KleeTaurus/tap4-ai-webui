@@ -1,9 +1,10 @@
-import { HTMLAttributeAnchorTarget } from 'react';
-import Link from 'next/link';
+// import { HTMLAttributeAnchorTarget } from 'react';
+// import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { CONTACT_US_EMAIL } from '@/lib/env';
 
+/*
 function InfoLink({
   href,
   title,
@@ -27,6 +28,7 @@ function InfoLink({
     </Link>
   );
 }
+*/
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -44,6 +46,7 @@ export default function Footer() {
   ];
   */
 
+  /*
   const INFO_LIST = [
     {
       title: t('privacy'),
@@ -54,6 +57,7 @@ export default function Footer() {
       href: '/terms-of-service',
     },
   ];
+  */
 
   return (
     <footer className='w-full bg-[#15141A]'>
@@ -64,9 +68,9 @@ export default function Footer() {
         </div>
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
           <div className='grid grid-cols-2 gap-x-10 gap-y-5 lg:grid-cols-1 lg:gap-3'>
-            {INFO_LIST.map((item) => (
+            {/* INFO_LIST.map((item) => (
               <InfoLink key={item.href} href={item.href} title={item.title} />
-            ))}
+            )) */}
             <a
               href={`mailto:${CONTACT_US_EMAIL}`}
               className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'

@@ -6,7 +6,7 @@ import WebNavCardList from '@/components/webNav/WebNavCardList';
 
 import { TagList } from '../(home)/Tag';
 
-const WEB_PAGE_SIZE = 12;
+const WEB_PAGE_SIZE = 24;
 
 export default async function ExploreList({ pageNum }: { pageNum?: string }) {
   const supabase = createClient();
@@ -17,7 +17,7 @@ export default async function ExploreList({ pageNum }: { pageNum?: string }) {
   const end = start + WEB_PAGE_SIZE - 1;
 
   const [{ data: categoryList }, { data: navigationList, count }] = await Promise.all([
-    supabase.from('navigation_category').select(),
+    supabase.from('navigation_category').select().eq('del_flag', 0).order('sort', { ascending: true }),
     supabase
       .from('web_navigation')
       .select('*', { count: 'exact' })
@@ -34,7 +34,7 @@ export default async function ExploreList({ pageNum }: { pageNum?: string }) {
         <TagList
           data={categoryList!.map((item) => ({
             id: String(item.id),
-            name: item.name,
+            name: item.title,
             href: `/category/${item.name}`,
           }))}
         />
