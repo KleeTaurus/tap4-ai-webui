@@ -24,7 +24,7 @@ export default function WebNavCard({ name, thumbnail_url, title, url, content }:
         </div>
       </Link>
       <div className='flex items-center justify-between px-[6px]'>
-        <a href={url} title={title} target='_blank' rel='nofollow' className='hover:opacity-70'>
+        <a href={`/ai/${name}`} title={title} target='_blank' rel='nofollow' className='hover:opacity-70'>
           <h3 className='line-clamp-1 flex-1 text-sm font-bold lg:text-base'>{title}</h3>
         </a>
         <a href={url} title={title} target='_blank' rel='nofollow' className='hover:opacity-70'>
