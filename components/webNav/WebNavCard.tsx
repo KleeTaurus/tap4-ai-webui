@@ -9,7 +9,7 @@ export default function WebNavCard({ name, thumbnail_url, title, url, content }:
   const t = useTranslations('Home');
 
   return (
-    <div className='flex h-[210px] flex-col gap-3 rounded-xl bg-[#2C2D36] p-1 lg:h-[343px]'>
+    <div className='flex h-[210px] flex-col gap-3 rounded-md bg-[#2C2D36] p-1 lg:h-[343px]'>
       <Link href={`/ai/${name}`} title={title} className='group relative'>
         <img
           src={thumbnail_url || ''}
@@ -17,9 +17,9 @@ export default function WebNavCard({ name, thumbnail_url, title, url, content }:
           title={title}
           width={310}
           height={174}
-          className='aspect-[310/174] w-full rounded-xl bg-white/40 hover:opacity-70'
+          className='aspect-[310/174] w-full rounded-md bg-white/40 hover:opacity-70'
         />
-        <div className='absolute inset-0 z-10 hidden items-center justify-center gap-1 rounded-xl bg-black bg-opacity-50 text-xl text-white transition-all duration-200 group-hover:flex'>
+        <div className='absolute inset-0 z-10 hidden items-center justify-center gap-1 rounded-md bg-black bg-opacity-50 text-xl text-white transition-all duration-200 group-hover:flex'>
           {t('checkDetail')} <CircleArrowRight className='size-4' />
         </div>
       </Link>

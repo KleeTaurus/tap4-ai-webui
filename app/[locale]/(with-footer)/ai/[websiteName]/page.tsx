@@ -68,7 +68,7 @@ export default async function Page({ params: { websiteName } }: { params: { webs
             // width={466}
             // height={243}
             fill
-            src={data.thumbnail_url || ''}
+            src={data.image_url || ''}
             className='absolute mt-3 aspect-[466/234] w-full rounded-[16px] border border-[#424242] bg-[#424242] bg-cover lg:mt-0'
           />
           <div className='absolute inset-0 z-10 hidden items-center justify-center gap-1 rounded-[16px] bg-black bg-opacity-50 text-2xl text-white transition-all duration-200 group-hover:flex'>
