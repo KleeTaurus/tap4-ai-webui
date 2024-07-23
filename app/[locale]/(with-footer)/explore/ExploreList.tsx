@@ -32,11 +32,14 @@ export default async function ExploreList({ pageNum }: { pageNum?: string }) {
       </div>
       <div className='mb-10 mt-5'>
         <TagList
-          data={categoryList!.map((item) => ({
-            id: String(item.id),
-            name: item.title,
-            href: `/category/${item.name}`,
-          }))}
+          data={[
+            { id: '-1', name: '全部工具', href: '/' },
+            ...categoryList!.map((item) => ({
+              id: String(item.id),
+              name: item.title,
+              href: `/category/${item.name}`,
+            })),
+          ]}
         />
       </div>
       <WebNavCardList dataList={navigationList!} />

@@ -23,8 +23,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className='flex-y-center mx-auto w-full max-w-pc px-3'>
       <div className='my-5 flex flex-col gap-1 text-balance text-center lg:my-10 lg:gap-3'>
-        <h1 className='text-2xl lg:text-5xl'>{t('title')}</h1>
-        <h2 className='text-xs lg:text-sm'>{t('subTitle')}</h2>
+        <h1 className='text-2xl font-bold text-white lg:text-5xl'>{t('title')}</h1>
+        <h2 className='text-balance text-xs font-bold text-white lg:text-sm'>{t('subTitle')}</h2>
       </div>
       {children}
       <Faq />

@@ -48,11 +48,14 @@ export default async function Page({ params }: { params: { search?: string } }) 
       <div className='mb-10 mt-5'>
         {params?.search && (
           <TagList
-            data={categoryList!.map((item) => ({
-              id: String(item.id),
-              name: item.title,
-              href: `/category/${item.name}`,
-            }))}
+            data={[
+              { id: '-1', name: '全部工具', href: '/' },
+              ...categoryList!.map((item) => ({
+                id: String(item.id),
+                name: item.title,
+                href: `/category/${item.name}`,
+              })),
+            ]}
           />
         )}
       </div>

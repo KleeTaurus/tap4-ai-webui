@@ -43,8 +43,8 @@ export default async function Page() {
 
   return (
     <div className='relative w-full'>
-      <div className='relative mx-auto w-full max-w-pc flex-1 px-3 lg:px-0'>
-        <div className='my-5 flex flex-col text-center lg:mx-auto lg:my-10 lg:gap-1'>
+      <div className='flex-y-center mx-auto w-full max-w-pc px-3'>
+        <div className='my-5 flex flex-col text-center lg:mx-auto lg:my-10 lg:gap-3'>
           <h1 className='text-2xl font-bold text-white lg:text-5xl'>{t('title')}</h1>
           <h2 className='text-balance text-xs font-bold text-white lg:text-sm'>{t('subTitle')}</h2>
         </div>
@@ -53,11 +53,14 @@ export default async function Page() {
         </div>
         <div className='mb-10 mt-5'>
           <TagList
-            data={categoryList!.map((item) => ({
-              id: String(item.id),
-              name: item.title,
-              href: `/category/${item.name}`,
-            }))}
+            data={[
+              { id: '-1', name: '全部工具', href: '/' },
+              ...categoryList!.map((item) => ({
+                id: String(item.id),
+                name: item.title,
+                href: `/category/${item.name}`,
+              })),
+            ]}
           />
         </div>
         <div className='flex flex-col gap-5'>
