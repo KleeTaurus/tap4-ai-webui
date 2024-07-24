@@ -49,7 +49,7 @@ export default async function ExploreList({ pageNum }: { pageNum?: string }) {
         total={count!}
         route='/explore'
         subRoute='/page'
-        className='my-5 lg:my-10'
+        className='mx-auto my-5 w-min lg:my-10'
       />
     </>
   );
