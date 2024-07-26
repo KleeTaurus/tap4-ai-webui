@@ -29,6 +29,7 @@ export default function Faq() {
           <ContentItem>{t('2.answer-1')}</ContentItem>
           <ContentItem>{t('2.answer-2')}</ContentItem>
           <ContentItem>{t('2.answer-3')}</ContentItem>
+          <ContentItem>{t('2.answer-4')}</ContentItem>
         </div>
       </div>
     </div>
